@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hunter</title>
+    <link rel="stylesheet" href="/sty.css">
+</head>
+<body>
+    <header>
+        <div class="title-row">
+            <h1>Movie Hunter</h1>
+            <h2>by 25251A0562 Pearly</h2>
+        </div>
+        <form action="/moviepage" method="GET" class="search-form">
+            <input type="search" name="search" placeholder="Search movies" value="<%= search %>">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <% if (error) { %>
+            <p class="form-error" role="alert"><%= error %></p>
+        <% } %>
+        <div class="section-heading">
+            <h2>Movies</h2>
+        </div>
+        <% if (movies.length === 0) { %>
+            <p class="not-found"><%= search ? 'Movie not found in our database.' : 'No movies have been added yet.' %></p>
+        <% } else { %>
+            <div class="movie-container">
+                <% movies.forEach(movie => { %>
+                    <article class="card">
+                        <img src="<%= movie.poster %>" alt="<%= movie.title %> poster" loading="lazy">
+                        <div class="card-content">
+                            <h3><%= movie.title %></h3>
+                            <div class="info">Rating <%= movie.rating %></div>
+                            <% if (movie.reviews?.length) { %>
+                                <div class="reviews">
+                                    <% movie.reviews.slice(-2).reverse().forEach(review => { %>
+                                        <blockquote>“<%= review.text %>” <cite>— <%= review.author %></cite></blockquote>
+                                    <% }) %>
+                                </div>
+                            <% } %>
+                            <details class="review-details">
+                                <summary>Add a review</summary>
+                                <form action="/movies/<%= movie._id %>/reviews" method="POST" class="review-form">
+                                    <input name="reviewAuthor" placeholder="Your name">
+                                    <textarea name="reviewText" rows="3" required placeholder="Write a review..."></textarea>
+                                    <button type="submit">Post review</button>
+                                </form>
+                            </details>
+                        </div>
+                    </article>
+                <% }) %>
+            </div>
+        <% } %>
+        <section class="add-panel" aria-labelledby="add-movie-heading">
+            <h2 id="add-movie-heading">Add movie</h2>
+            <form action="/movies" method="POST" class="movie-form">
+                <label>Title <input name="title" required placeholder="Title"></label>
+                <label>Poster URL <input type="url" name="poster" required placeholder="Poster URL"></label>
+                <label>Rating <input name="rating" required placeholder="Rating"></label>
+                <label>Review <textarea name="reviewText" rows="3" placeholder="Review"></textarea></label>
+                <label>Your name <input name="reviewAuthor" placeholder="Name"></label>
+                <button type="submit">Add movie</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
