@@ -1,0 +1,167 @@
+[{
+  "_id": {
+    "$oid": "6aa7a6cbf32947986f9c1aa3"
+  },
+  "title": "Dune: Part Two",
+  "poster": "https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
+  "rating": "8.6",
+  "commentsCount": 128,
+  "inTheaters": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-09-14T07:48:27.781Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-16T11:20:22.257Z"
+  },
+  "reviews": [
+    {
+      "author": "Maya",
+      "text": "good",
+      "_id": {
+        "$oid": "6aaa7b76ee34a89d2fea77bf"
+      },
+      "createdAt": {
+        "$date": "2026-09-16T11:20:22.258Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa7a6cbf32947986f9c1aa4"
+  },
+  "title": "The Wild Robot",
+  "poster": "https://image.tmdb.org/t/p/w500/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
+  "rating": "8.3",
+  "commentsCount": 94,
+  "inTheaters": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-09-14T07:48:27.784Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-14T07:48:27.784Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa7a6cbf32947986f9c1aa5"
+  },
+  "title": "Inside Out 2",
+  "poster": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+  "rating": "7.6",
+  "commentsCount": 76,
+  "inTheaters": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-09-14T07:48:27.784Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-16T11:32:04.722Z"
+  },
+  "reviews": [
+    {
+      "author": "Maya",
+      "text": "Awesome",
+      "_id": {
+        "$oid": "6aaa7e34ee34a89d2fea77d5"
+      },
+      "createdAt": {
+        "$date": "2026-09-16T11:32:04.723Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa7abbbd6828da1ce0a73d8"
+  },
+  "title": "Oppenheimer",
+  "commentsCount": 182,
+  "inTheaters": false,
+  "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+  "rating": "8.6"
+},
+{
+  "_id": {
+    "$oid": "6aa7abbbd6828da1ce0a73d9"
+  },
+  "title": "Spider-Man: Across the Spider-Verse",
+  "commentsCount": 143,
+  "inTheaters": false,
+  "poster": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+  "rating": "8.6"
+},
+{
+  "_id": {
+    "$oid": "6aa7abbbd6828da1ce0a73da"
+  },
+  "title": "Barbie",
+  "commentsCount": 117,
+  "inTheaters": false,
+  "poster": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+  "rating": "7.0",
+  "reviews": [
+    {
+      "author": "Ram",
+      "text": "Good",
+      "_id": {
+        "$oid": "6aaa7ad7ee34a89d2fea77b9"
+      },
+      "createdAt": {
+        "$date": "2026-09-16T11:17:43.889Z"
+      }
+    },
+    {
+      "author": "Ram",
+      "text": "NIce",
+      "_id": {
+        "$oid": "6aaa7bfcee34a89d2fea77c8"
+      },
+      "createdAt": {
+        "$date": "2026-09-16T11:22:36.393Z"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2026-09-16T11:22:36.392Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6aa7abbbd6828da1ce0a73db"
+  },
+  "title": "Top Gun: Maverick",
+  "commentsCount": 156,
+  "inTheaters": false,
+  "poster": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+  "rating": "8.3"
+},
+{
+  "_id": {
+    "$oid": "6aaa7e4aee34a89d2fea77d8"
+  },
+  "title": "Inception",
+  "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+  "rating": "9",
+  "reviews": [
+    {
+      "author": "Ram",
+      "text": "good",
+      "_id": {
+        "$oid": "6aaa7e4aee34a89d2fea77d9"
+      },
+      "createdAt": {
+        "$date": "2026-09-16T11:32:26.470Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-09-16T11:32:26.471Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-16T11:32:26.471Z"
+  },
+  "__v": 0
+}]
